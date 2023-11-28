@@ -5,12 +5,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return 'Hello Dr. Dexter! This is a Flask app.'
+    return 'Hello, Dexter! This is a Flask app.'
 
 
 @app.route('/about')
 def about():
     return render_template('about.html')
+
 
 
 # New route: Contact page
